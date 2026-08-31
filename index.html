@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Vishal Chachu ❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff9fb;
+    color:#49313b;
+    font-family:Georgia, serif;
+    overflow-x:hidden;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+#intro{
+    position:fixed;
+    inset:0;
+    z-index:9999;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    padding:25px;
+
+    background:
+    radial-gradient(
+        circle at top,
+        #f8dce7,
+        #fff9fb 65%
+    );
+
+    transition:1s ease;
+}
+
+.intro-box{
+    width:100%;
+    max-width:430px;
+}
+
+.gift{
+    font-size:85px;
+    animation:float 2s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0) rotate(-3deg);
+    }
+
+    50%{
+        transform:translateY(-12px) rotate(3deg);
+    }
+}
+
+.intro-box h1{
+    font-size:36px;
+    margin-top:20px;
+    line-height:1.25;
+}
+
+.intro-box p{
+    margin-top:15px;
+    font-family:Arial,sans-serif;
+    color:#80616c;
+    line-height:1.6;
+}
+
+.open-btn{
+    margin-top:28px;
+
+    padding:15px 28px;
+
+    border:none;
+    border-radius:18px;
+
+    background:#b85c7c;
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 12px 30px rgba(184,92,124,.25);
+}
+
+
+/* =========================
+   PASSWORD
+========================= */
+
+#lock{
+    min-height:100vh;
+
+    display:none;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:25px;
+
+    background:
+    linear-gradient(
+        145deg,
+        #fce7ef,
+        #fff9fb
+    );
+}
+
+.lock-box{
+    width:100%;
+    max-width:420px;
+
+    text-align:center;
+
+    padding:30px 24px;
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:30px;
+
+    box-shadow:
+    0 20px 60px rgba(80,40,55,.12);
+}
+
+.lock-icon{
+    font-size:50px;
+}
+
+.lock-box h1{
+    margin-top:15px;
+    font-size:32px;
+}
+
+.lock-box p{
+    margin-top:10px;
+    font-family:Arial,sans-serif;
+    color:#80616c;
+    line-height:1.5;
+}
+
+.password{
+    width:100%;
+
+    margin-top:24px;
+
+    padding:15px;
+
+    border:
+    1px solid #e3c5d0;
+
+    border-radius:16px;
+
+    outline:none;
+
+    text-align:center;
+
+    font-size:18px;
+}
+
+.unlock{
+    margin-top:12px;
+
+    padding:14px 25px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#b85c7c;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+}
+
+.error{
+    min-height:20px;
+    margin-top:10px;
+
+    color:#c44762;
+
+    font-family:Arial,sans-serif;
+
+    font-size:14px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+#birthday{
+    display:none;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+    background:
+    linear-gradient(
+        #fce8ef,
+        #fff9fb
+    );
+}
+
+.hero-photo{
+    width:245px;
+    height:245px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:8px solid white;
+
+    box-shadow:
+    0 20px 55px rgba(80,40,55,.18);
+
+    animation:
+    appear 1.2s ease;
+}
+
+@keyframes appear{
+    from{
+        opacity:0;
+        transform:scale(.8);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+.hero h1{
+    margin-top:25px;
+
+    font-size:42px;
+
+    line-height:1.2;
+}
+
+.hero p{
+    margin-top:15px;
+
+    font-family:Arial,sans-serif;
+
+    color:#80616c;
+
+    line-height:1.6;
+}
+
+.scroll{
+    margin-top:55px;
+
+    font-family:Arial,sans-serif;
+
+    font-size:13px;
+
+    animation:
+    bounce 1.5s infinite;
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(8px);
+    }
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section{
+    max-width:760px;
+
+    margin:auto;
+
+    padding:80px 20px;
+}
+
+.title{
+    text-align:center;
+
+    font-size:32px;
+
+    margin-bottom:45px;
+}
+
+
+/* =========================
+   PHOTO MEMORIES
+========================= */
+
+.memory{
+    margin-bottom:50px;
+
+    opacity:0;
+
+    transform:translateY(45px);
+
+    transition:
+    opacity .8s ease,
+    transform .8s ease;
+}
+
+.memory.show{
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+.photo-card{
+    background:white;
+
+    padding:12px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 18px 45px rgba(80,40,55,.10);
+}
+
+.photo-card img{
+    width:100%;
+
+    aspect-ratio:4/5;
+
+    object-fit:cover;
+
+    display:block;
+
+    border-radius:19px;
+}
+
+.caption{
+    padding:18px 10px 12px;
+
+    text-align:center;
+
+    font-family:Arial,sans-serif;
+
+    color:#755561;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message-section{
+    background:
+    linear-gradient(
+        #fff9fb,
+        #fcebf1
+    );
+}
+
+.letter{
+    background:white;
+
+    padding:32px 27px;
+
+    border-radius:28px;
+
+    box-shadow:
+    0 18px 50px rgba(80,40,55,.10);
+
+    line-height:1.9;
+
+    font-size:18px;
+
+    white-space:pre-line;
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.9s ease;
+}
+
+.letter.show{
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final{
+    min-height:75vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:60px 25px;
+
+    background:
+    linear-gradient(
+        #fcebf1,
+        #f6dbe5
+    );
+}
+
+.final-icon{
+    font-size:70px;
+
+    animation:
+    heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat{
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.12);
+    }
+}
+
+.final h2{
+    margin-top:20px;
+
+    font-size:36px;
+}
+
+.final p{
+    max-width:520px;
+
+    margin-top:18px;
+
+    font-family:Arial,sans-serif;
+
+    color:#73535f;
+
+    line-height:1.7;
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.heart{
+    position:fixed;
+
+    bottom:-40px;
+
+    z-index:100;
+
+    pointer-events:none;
+
+    animation:
+    rise linear forwards;
+}
+
+@keyframes rise{
+
+    0%{
+        transform:
+        translateY(0)
+        rotate(0);
+
+        opacity:0;
+    }
+
+    15%{
+        opacity:.7;
+    }
+
+    100%{
+        transform:
+        translateY(-110vh)
+        rotate(30deg);
+
+        opacity:0;
+    }
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti{
+    position:fixed;
+
+    top:-20px;
+
+    width:7px;
+    height:12px;
+
+    z-index:200;
+
+    pointer-events:none;
+
+    animation:
+    fall linear forwards;
+}
+
+@keyframes fall{
+
+    to{
+        transform:
+        translateY(110vh)
+        rotate(720deg);
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .intro-box h1{
+        font-size:31px;
+    }
+
+    .hero-photo{
+        width:220px;
+        height:220px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .title{
+        font-size:28px;
+    }
+
+    .letter{
+        font-size:17px;
+        padding:26px 22px;
+    }
+
+    .final h2{
+        font-size:31px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section id="intro">
+
+    <div class="intro-box">
+
+        <div class="gift">
+            🎁
+        </div>
+
+        <h1>
+            A little surprise
+            for you...
+        </h1>
+
+        <p>
+            Someone wanted to make
+            your birthday a little special. ❤️
+        </p>
+
+        <button
+            class="open-btn"
+            onclick="openSurprise()">
+
+            Open the surprise ✨
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PASSWORD
+========================= -->
+
+<section id="lock">
+
+    <div class="lock-box">
+
+        <div class="lock-icon">
+            🔐
+        </div>
+
+        <h1>
+            One little secret
+        </h1>
+
+        <p>
+            Enter the password to unlock
+            your birthday surprise.
+        </p>
+
+        <input
+            id="password"
+            class="password"
+            type="password"
+            inputmode="numeric"
+            placeholder="Enter password">
+
+        <button
+            class="unlock"
+            onclick="unlock()">
+
+            Unlock ❤️
+
+        </button>
+
+        <div
+            id="error"
+            class="error">
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     BIRTHDAY
+========================= -->
+
+<main id="birthday">
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <img
+            src="photo1.png"
+            class="hero-photo"
+            alt="Vishal Chachu">
+
+        <h1>
+            Happy Birthday,
+            <br>
+            Vishal Chachu 🎂❤️
+        </h1>
+
+        <p>
+            Today is all about celebrating
+            someone truly special. ✨
+        </p>
+
+        <div class="scroll">
+            ↓ Scroll down ↓
+        </div>
+
+    </section>
+
+
+
+    <!-- PHOTOS -->
+
+    <section class="section">
+
+        <h2 class="title">
+            Some special memories 📸
+        </h2>
+
+
+        <div class="memory">
+
+            <div class="photo-card">
+
+                <img
+                    src="photo2.png"
+                    alt="Memory 1">
+
+                <div class="caption">
+                    A memory worth keeping forever. ❤️
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="memory">
+
+            <div class="photo-card">
+
+                <img
+                    src="photo3.png"
+                    alt="Memory 2">
+
+                <div class="caption">
+                    Family moments are always special. 🌸
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="memory">
+
+            <div class="photo-card">
+
+                <img
+                    src="photo4.png"
+                    alt="Memory 3">
+
+                <div class="caption">
+                    Another little memory to smile about. ✨
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="memory">
+
+            <div class="photo-card">
+
+                <img
+                    src="photo5.png"
+                    alt="Memory 4">
+
+                <div class="caption">
+                    And one more beautiful moment. ❤️
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- MESSAGE -->
+
+    <section class="section message-section">
+
+        <h2 class="title">
+            A little birthday message 💌
+        </h2>
+
+        <div
+            id="letter"
+            class="letter">
+
+Happy Birthday, Vishal Chachu! 🎂✨
+
+Aaj ka din aapke liye bahut saari khushiyan, hasi aur beautiful memories lekar aaye. Aap sirf mere chachu nahi, balki meri life ke un special logon me se hain jinke saath judi chhoti-chhoti memories hamesha yaad rehti hain. ❤️
+
+Aapka pyaar, care aur woh apna sa nature hamesha special raha hai. Zindagi chahe kitni bhi busy ho jaaye, family ke kuch rishte hamesha dil ke bahut kareeb rehte hain—and aap unhi rishton me se ek hain. 🌸
+
+Meri wish hai ki aane wala saal aapke liye good health, success, peace, happiness aur bahut saare unforgettable moments lekar aaye. Aap hamesha aise hi haste rahein, khush rahein aur apni positive energy se sabko smile dete rahein. ✨
+
+Once again, Happy Birthday Chachu! 🎉❤️
+
+Aapka ye special day utna hi beautiful ho jitne beautiful aapke saath jude memories hain. 🫶🏻
+
+Stay happy. Stay blessed. Always keep smiling. ❤️
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FINAL -->
+
+    <section class="final">
+
+        <div class="final-icon">
+            ❤️
+        </div>
+
+        <h2>
+            Happy Birthday, Chachu!
+        </h2>
+
+        <p>
+
+            I hope this little surprise
+            brings a big smile to your face.
+
+            <br><br>
+
+            Wishing you a beautiful year
+            filled with happiness,
+            health and countless memories. ✨
+
+            <br><br>
+
+            Lots of love and best wishes. ❤️
+
+        </p>
+
+    </section>
+
+
+</main>
+
+
+
+<script>
+
+/* =========================
+   INTRO
+========================= */
+
+function openSurprise(){
+
+    const intro =
+        document.getElementById("intro");
+
+    intro.style.opacity = "0";
+
+    setTimeout(function(){
+
+        intro.style.display = "none";
+
+        document.getElementById(
+            "lock"
+        ).style.display = "flex";
+
+    },1000);
+
+}
+
+
+/* =========================
+   PASSWORD
+========================= */
+
+function unlock(){
+
+    const password =
+        document.getElementById(
+            "password"
+        ).value;
+
+    const error =
+        document.getElementById(
+            "error"
+        );
+
+
+    if(password === "1234"){
+
+        document.getElementById(
+            "lock"
+        ).style.display = "none";
+
+        document.getElementById(
+            "birthday"
+        ).style.display = "block";
+
+        window.scrollTo(0,0);
+
+        createConfetti();
+
+        startHearts();
+
+        setupScrollAnimations();
+
+    }
+
+    else{
+
+        error.innerText =
+            "Oops! Try again 💭";
+
+    }
+
+}
+
+
+/* =========================
+   ENTER KEY
+========================= */
+
+document
+.getElementById("password")
+.addEventListener(
+    "keydown",
+    function(event){
+
+        if(event.key === "Enter"){
+
+            unlock();
+
+        }
+
+    }
+);
+
+
+/* =========================
+   HEARTS
+========================= */
+
+function createHeart(){
+
+    const heart =
+        document.createElement("div");
+
+    heart.className = "heart";
+
+    const symbols =
+        ["♥","♡","❤️","💕"];
+
+    heart.innerHTML =
+        symbols[
+            Math.floor(
+                Math.random()*symbols.length
+            )
+        ];
+
+    heart.style.left =
+        Math.random()*100 + "vw";
+
+    heart.style.fontSize =
+        (14 + Math.random()*20) + "px";
+
+    heart.style.animationDuration =
+        (5 + Math.random()*5) + "s";
+
+    document.body.appendChild(
+        heart
+    );
+
+    setTimeout(function(){
+
+        heart.remove();
+
+    },10000);
+
+}
+
+
+function startHearts(){
+
+    setInterval(
+        createHeart,
+        800
+    );
+
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+function createConfetti(){
+
+    for(
+        let i=0;
+        i<70;
+        i++
+    ){
+
+        const piece =
+            document.createElement("div");
+
+        piece.className =
+            "confetti";
+
+        piece.style.left =
+            Math.random()*100 + "vw";
+
+        piece.style.animationDuration =
+            (2 + Math.random()*3) + "s";
+
+        piece.style.animationDelay =
+            Math.random()*1.5 + "s";
+
+        document.body.appendChild(
+            piece
+        );
+
+        setTimeout(function(){
+
+            piece.remove();
+
+        },6000);
+
+    }
+
+}
+
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+function setupScrollAnimations(){
+
+    const elements =
+        document.querySelectorAll(
+            ".memory, .letter"
+        );
+
+    const observer =
+        new IntersectionObserver(
+
+            function(entries){
+
+                entries.forEach(
+                    function(entry){
+
+                        if(
+                            entry.isIntersecting
+                        ){
+
+                            entry.target
+                                .classList
+                                .add("show");
+
+                        }
+
+                    }
+                );
+
+            },
+
+            {
+                threshold:0.15
+            }
+
+        );
+
+
+    elements.forEach(
+        function(element){
+
+            observer.observe(element);
+
+        }
+    );
+
+}
+
+</script>
+
+
+</body>
+</html>
